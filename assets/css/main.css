@@ -57,7 +57,7 @@ body {
 }
 
 .custom-bg{
-  background-image: url('/assets/img/cutomize-bg.jpg');
+  background-image: url('assets/img/cutomize-bg.jpg');
   background-position: center;
   background-repeat: repeat;
   /* background-attachment: fixed; */
