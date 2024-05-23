@@ -1,15 +1,4 @@
-/**
-* Template Name: UpConstruction
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Updated: May 18 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -97,29 +86,34 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding-top: 8px;
+  /* padding: 20px 0; */
   transition: all 0.5s;
   z-index: 997;
 }
 
-.header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+.logo{
+width: 15%;
 }
 
-.header .logo h1 {
+.header .logo img {
+  max-height: 90px;
+  /* margin-right: 8px; */
+}
+
+/* .header .logo h1 {
   font-size: 24px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
-}
+} */
 
-.header .logo span {
+/* .header .logo span {
   font-size: 24px;
   padding-left: 1px;
   font-family: var(--heading-font);
   color: var(--color-primary);
-}
+} */
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
@@ -139,6 +133,13 @@ h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 @media (min-width: 1200px) {
+  .cart{
+    width: 15%;
+  }
+
+  .navmenu{
+    width: 70%;
+  }
   .navmenu {
     padding: 0;
   }
@@ -408,10 +409,12 @@ h6 {
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   position: relative;
 }
-
+.address{
+  width: 60%;
+}
 .footer .container {
   position: relative;
 }
@@ -598,6 +601,37 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
+
+
+/*--------------------------------------------------------------
+# Customization Button
+--------------------------------------------------------------*/
+.customize {
+  position: fixed;
+  visibility: visible;
+  opacity: 0;
+  left: 15px;
+  bottom: 15px;
+  z-index: 199999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.customize i {
+  font-size: 24px;
+  color: var(--default-color);
+  line-height: 0;
+}
+
+.customize:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
