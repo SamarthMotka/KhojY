@@ -56,6 +56,17 @@ body {
   font-family: var(--default-font);
 }
 
+.custom-bg{
+  background-image: url('/assets/img/cutomize-bg.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
+.bg{
+  background-color: white;
+}
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -275,9 +286,11 @@ width: 15%;
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
+    position: absolute;
     color: var(--nav-color);
-    font-size: 28px;
+    font-size: 32px;
     line-height: 0;
+    right: 30px;
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
@@ -418,7 +431,9 @@ width: 15%;
 .footer .container {
   position: relative;
 }
-
+.align {
+  margin: 0 auto;
+}
 .footer:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 20%);
@@ -607,31 +622,47 @@ width: 15%;
 /*--------------------------------------------------------------
 # Customization Button
 --------------------------------------------------------------*/
-.customize {
+.scroll-top-2 {
   position: fixed;
-  visibility: visible;
+  visibility: hidden;
   opacity: 0;
   left: 15px;
   bottom: 15px;
-  z-index: 199999;
+  z-index: 99999;
   background-color: var(--accent-color);
-  width: 40px;
+  /* width: 130px; */
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
 }
 
-.customize i {
+.scroll-top-2 img{
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+}
+
+.scroll-top-2 span{
+  color: #000000;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.scroll-top-2 i {
   font-size: 24px;
   color: var(--default-color);
   line-height: 0;
 }
 
-.customize:hover {
+.scroll-top-2:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   color: var(--contrast-color);
 }
 
+.scroll-top-2.active {
+  visibility: visible;
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -654,7 +685,7 @@ width: 15%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 160px 0 60px 0;
+  padding: 120px 0 30px 0;
   text-align: center;
   position: relative;
 }
@@ -1012,6 +1043,7 @@ section,
 
 .get-started .php-email-form input[type=text],
 .get-started .php-email-form input[type=email],
+.contact .php-email-form input[type=tel],
 .get-started .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1024,12 +1056,14 @@ section,
 
 .get-started .php-email-form input[type=text]:focus,
 .get-started .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type=tel]:focus,
 .get-started .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .get-started .php-email-form input[type=text]::placeholder,
 .get-started .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type=tel]::placeholder,
 .get-started .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
@@ -2702,6 +2736,7 @@ section,
 }
 
 .contact .php-email-form input[type=text],
+.contact .php-email-form input[type=tel],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   font-size: 14px;
@@ -2715,12 +2750,14 @@ section,
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type=tel]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type=tel]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
@@ -2751,9 +2788,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 
 /*--------------------------------------------------------------
 # Widgets
