@@ -9,13 +9,13 @@
 /* Global Colors */
 :root {
   /* Background Color - This color is applied to the background of the entire website as well as individual sections. */
-  --background-color: #ffffff;
+  --background-color: rgb( 66,41,59);
 
   /* Default Color - This is the default color used for the majority of the text content. */
-  --default-color: #364d59;
+  --default-color: white;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: #52565e;
+  --heading-color: white;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
   --accent-color: #feb900;
@@ -27,7 +27,7 @@
 /* Nav Menu Colors */
 :root {
   /* Nav Color - This is the default color of the main navmenu links. */
-  --nav-color: rgba(255, 255, 255, 0.55);
+  --nav-color: white(255, 255, 255, 0.55);
 
   /* Nav Hover Color - This color is applied to main navmenu links when they are hovered over. */
   --nav-hover-color: #ffffff;
@@ -46,6 +46,15 @@
 :root {
   scroll-behavior: smooth;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /*--------------------------------------------------------------
 # General
@@ -104,9 +113,8 @@ h6 {
 }
 
 .header:hover{
-  background-color: #5b1d1d;
+  background-color: rgb(66,41,59);
 }
-
 .logo{
 width: 15%;
 }
@@ -137,10 +145,10 @@ width: 15%;
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(255, 255, 255, 0.95);
-  --heading-color: #3c3c3c;
-  --nav-color: #3c3c3c;
-  --nav-hover-color: #3c3c3c;
+  --background-color: rgb( 66,41,59);
+  --heading-color: white;
+  --nav-color: white;
+  --nav-hover-color: #FFD700;
 }
 
 /*--------------------------------------------------------------
