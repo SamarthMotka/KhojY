@@ -121,6 +121,7 @@ width: 15%;
 
 .header .logo img {
   max-height: 90px;
+  filter: grayscale(100%)
   /* margin-right: 8px; */
 }
 
@@ -767,8 +768,8 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 500;
   position: relative;
 }
 
