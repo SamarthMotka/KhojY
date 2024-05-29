@@ -15,7 +15,7 @@
   --default-color: white;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: white;
+  --heading-color: gray;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
   --accent-color: #d4af37;
