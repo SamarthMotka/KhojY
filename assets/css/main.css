@@ -15,7 +15,7 @@
   --default-color: white;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: gray;
+  --heading-color: #A14B58;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
   --accent-color: #d4af37;
@@ -427,12 +427,11 @@ width: 15%;
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  --background-color: #000000;
+  /* --background-color: #000000; */
   --heading-color: var(--contrast-color);
   --default-color: var(--contrast-color);
   color: var(--default-color);
   background-color: var(--background-color);
-  background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
   /* padding-bottom: 50px; */
@@ -743,8 +742,8 @@ width: 15%;
 --------------------------------------------------------------*/
 section,
 .section {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: rgb( 66,41,59);
+  background-color: #FEE9DD;
   padding: 60px 0;
   scroll-margin-top: 92px;
   overflow: clip;
@@ -1140,7 +1139,7 @@ section,
 }
 
 .constructions .card-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #A14B58;
   margin: 0;
 }
 
@@ -1199,7 +1198,10 @@ section,
   border-bottom: 4px solid color-mix(in srgb, var(--heading-color), transparent 90%);
   transition: 0.3s;
 }
-
+.ship_policy{
+  margin-top:10vh;
+  height: 50vh;
+}
 .services .service-item p {
   line-height: 24px;
   font-size: 14px;
@@ -1271,7 +1273,8 @@ section,
 }
 
 .alt-services .icon-box i {
-  color: var(--accent-color);
+  color: #A14B58;
+  border: 1px #A14B58;
   background-color: var(--contrast-color);
   display: flex;
   align-items: center;
@@ -1356,9 +1359,9 @@ section,
 }
 
 .features .nav-link.active {
-  background-color: var(--background-color);
+  background-color: #FEE9DD;
   color: var(--accent-color);
-  border-color: var(--accent-color);
+  border-color: rgb( 66,41,59);
 }
 
 .features .tab-content {
