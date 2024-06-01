@@ -1161,7 +1161,20 @@ section,
   /* background-color: var(--contrast-color); */
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 270px;
+}
+
+.service-details{
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  /* padding-top: 20px; */
+  border-left: 1px solid #D4C5A8;
+  border-right: 1px solid #D4C5A8;
+  border-bottom: 1px solid #D4C5A8;
+  height: 200px;
+}
+.service-details h3{
+  color: #D4C5A8;
 }
 
 .services .service-item .icon {
