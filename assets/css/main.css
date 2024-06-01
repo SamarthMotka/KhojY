@@ -15,7 +15,7 @@
   --default-color: white;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: #A14B58;
+  --heading-color: rgb( 66,41,59);
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
   --accent-color: #d4af37;
@@ -737,12 +737,16 @@ width: 15%;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
+.dark-cl{
+color: rgb( 66,41,59);
+}
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
 section,
 .section {
-  color: rgb( 66,41,59);
+  color: #A14B58;
   background-color: #FEE9DD;
   padding: 60px 0;
   scroll-margin-top: 92px;
@@ -1136,6 +1140,7 @@ section,
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 15px;
+  color: rgb( 66,41,59);
 }
 
 .constructions .card-item p {
