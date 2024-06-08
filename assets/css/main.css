@@ -66,7 +66,7 @@ body {
 }
 
 .custom-bg{
-  background-image: url('assets/img/cutomize-bg.jpg');
+  background-image: url('https://res.cloudinary.com/da5crwlqh/image/upload/v1717867339/cutomize-bg_zlxhmp.jpg');
   background-position: center;
   background-repeat: repeat;
   /* background-attachment: fixed; */
@@ -801,7 +801,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero-main{
-  background-image: url('/KhojByYashvi/assets/img/home_illustration.jpg');
+  background-image: url('https://res.cloudinary.com/da5crwlqh/image/upload/v1717867226/home_illustration_tok5mo.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
