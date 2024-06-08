@@ -800,6 +800,19 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.hero-main{
+  background-image: url('/KhojByYashvi/assets/img/home_illustration.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+
+}
+.hero-carousel{
+  height: 100%;
+}
+
 .hero {
   --default-color: #ffffff;
   --background-color: #000000;
@@ -834,6 +847,7 @@ section,
   font-size: 56px;
   font-weight: 700;
   position: relative;
+  color: #000000;
 }
 
 .hero .info h2:after {
@@ -847,6 +861,7 @@ section,
   right: 0;
   bottom: 0;
   margin: auto;
+  
 }
 
 @media (max-width: 768px) {
@@ -858,6 +873,7 @@ section,
 .hero .info p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 18px;
+  color: #000000;
 }
 
 .hero .info .btn-get-started {
@@ -872,6 +888,7 @@ section,
   transition: 0.5s;
   margin: 10px;
   border: 2px solid var(--accent-color);
+  color: #000000;
 }
 
 .hero .info .btn-get-started:hover {
@@ -906,7 +923,7 @@ section,
 
 .hero .carousel-item::before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  /* background-color: color-mix(in srgb, var(--background-color), transparent 30%); */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1105,6 +1122,20 @@ section,
   100% {
     transform: rotate(360deg);
   }
+}
+
+.catalog button{
+  padding: 10px 15px;
+  border: 4px solid rgb( 66,41,59);
+  background-color: #FEE9DD;
+  color: black;
+  text-transform: uppercase;
+
+}
+.catalog button:hover{
+  background-color:rgb( 66,41,59) ;
+  color:#FEE9DD ;
+  transition: ease-in-out 0.4s;
 }
 
 /*--------------------------------------------------------------
