@@ -799,6 +799,29 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.hero-desc-content{
+  font-size: 20px;
+}
+
+.hero-desc img{
+max-width: 400px;
+}
+@media (max-width: 530px) {
+  .hero-desc img{
+  max-width: 200px;
+  }
+}
+.hero-content-logo  img{
+  max-height: 200px;
+}
+.hero-content-logo{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+
 .hero-main{
   background-image: url('https://res.cloudinary.com/da5crwlqh/image/upload/v1717867226/home_illustration_tok5mo.jpg');
   background-position: center center;
@@ -897,6 +920,19 @@ section,
   inset: 0;
   position: absolute;
   overflow: hidden;
+  margin: 60px;
+}
+.carousel-hero{
+  min-height: 100vh;
+}
+
+@media (max-width: 640px) {
+  .hero .carousel {
+  margin: 0px;
+  }
+  .carousel-hero{
+    min-height: 80vh;
+  }
 }
 
 .hero .carousel-item {
