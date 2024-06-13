@@ -1,24 +1,25 @@
 
 /* Fonts */
 :root {
-  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Roboto", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Quicksand",sans-serif;
+  --heading-font: "Quicksand", sans-serif;
+  --nav-font: "Quicksand", sans-serif;
 }
+
 
 /* Global Colors */
 :root {
   /* Background Color - This color is applied to the background of the entire website as well as individual sections. */
-  --background-color: rgb( 66,41,59);
+  --background-color: #6EB8DD;
 
   /* Default Color - This is the default color used for the majority of the text content. */
   --default-color: white;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: rgb( 66,41,59);
+  --heading-color: #DF9F3D;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  --accent-color: #d4af37;
+  --accent-color: #DF9F3D;
 
   /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
   --contrast-color: #ffffff;
@@ -39,7 +40,7 @@
   --nav-dropdown-color: #212529;
 
   /* Nav Dropdown Hover Color - Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-  --nav-dropdown-hover-color: #feb900;
+  --nav-dropdown-hover-color: #DF9F3D;
 }
 
 /* Smooth scroll */
@@ -47,13 +48,16 @@
   scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+/* .libre-baskerville-regular {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -62,7 +66,10 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .custom-bg{
@@ -101,7 +108,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
+  --background-color: var(--background-color);
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -113,7 +120,7 @@ h6 {
 }
 
 .header:hover{
-  background-color: rgb(66,41,59);
+  background-color: #6EB8DD;
 }
 .logo{
 width: 15%;
@@ -140,13 +147,13 @@ width: 15%;
 } */
 
 .scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 18px #6EB8DD;
 }
 
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgb( 66,41,59);
+  --background-color: #6EB8DD;
   --heading-color: white;
   --nav-color: white;
   --nav-hover-color: #FFD700;
@@ -746,8 +753,8 @@ color: rgb( 66,41,59);
 --------------------------------------------------------------*/
 section,
 .section {
-  color: #A14B58;
-  background-color: #FEE9DD;
+  color: white;
+  background-color: #E6E4B3;
   padding: 60px 0;
   scroll-margin-top: 92px;
   overflow: clip;
@@ -802,13 +809,22 @@ section,
 .hero-desc-content{
   font-size: 20px;
 }
-
+.process p {
+  font-size: 17px;
+  text-wrap: pretty;
+  margin: 12px 10px;
+}
 .hero-desc img{
-max-width: 400px;
+max-width: 500px;
 }
 @media (max-width: 530px) {
   .hero-desc img{
   max-width: 200px;
+  }
+  .process img{
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 30px;
   }
 }
 .hero-content-logo  img{
@@ -823,7 +839,7 @@ max-width: 400px;
 
 
 .hero-main{
-  background-image: url('https://res.cloudinary.com/da5crwlqh/image/upload/v1717867226/home_illustration_tok5mo.jpg');
+  background-image: url('https://res.cloudinary.com/da5crwlqh/image/upload/v1718292850/Khoj/u5trwlfwptdy4jxl1ecx.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1161,14 +1177,14 @@ max-width: 400px;
 .catalog button{
   padding: 10px 15px;
   border: 4px solid rgb( 66,41,59);
-  background-color: #FEE9DD;
+  background-color: #E6E4B3;
   color: black;
   text-transform: uppercase;
 
 }
 .catalog button:hover{
   background-color:rgb( 66,41,59) ;
-  color:#FEE9DD ;
+  color:#E6E4B3 ;
   transition: ease-in-out 0.4s;
 }
 
@@ -1355,8 +1371,8 @@ max-width: 400px;
 }
 
 .alt-services .icon-box i {
-  color: #A14B58;
-  border: 1px #A14B58;
+  color: #DF9F3D;
+  border: 1px #DF9F3D;
   background-color: var(--contrast-color);
   display: flex;
   align-items: center;
@@ -1441,7 +1457,7 @@ max-width: 400px;
 }
 
 .features .nav-link.active {
-  background-color: #FEE9DD;
+  background-color: #E6E4B3;
   color: var(--accent-color);
   border-color: rgb( 66,41,59);
 }
