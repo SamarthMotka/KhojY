@@ -10,16 +10,16 @@
 /* Global Colors */
 :root {
   /* Background Color - This color is applied to the background of the entire website as well as individual sections. */
-  --background-color: #DC5F00;
+  --background-color: #7469B6;
 
   /* Default Color - This is the default color used for the majority of the text content. */
   --default-color: #686D76;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: #373A40;
+  --heading-color: #6d567b;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  --accent-color: #373A40;
+  --accent-color: #AD88C6;
 
   /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
   --contrast-color: #ffffff;
@@ -84,7 +84,7 @@ body {
   background-color: white;
 }
 a {
-  color: var(--accent-color);
+  color: white;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -109,7 +109,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: var(--background-color);
-  --default-color: #ffffff;
+  --default-color: black;
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
@@ -120,7 +120,7 @@ h6 {
 }
 
 .header:hover{
-  background-color: #DC5F00;
+  background-color: #7469B6;
 }
 .logo{
 width: 15%;
@@ -147,16 +147,16 @@ width: 15%;
 } */
 
 .scrolled .header {
-  box-shadow: 0px 0 18px #DC5F00;
+  box-shadow: 0px 0 18px #7469B6;
 }
 
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #DC5F00;
+  --background-color: #7469B6;
   --heading-color: white;
   --nav-color: white;
-  --nav-hover-color: #FFD700;
+  --nav-hover-color: white;
 }
 
 /*--------------------------------------------------------------
@@ -242,7 +242,7 @@ width: 15%;
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #AD88C6;
   }
 
   .navmenu .dropdown ul {
@@ -307,7 +307,7 @@ width: 15%;
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     position: absolute;
-    color: var(--nav-color);
+    color: black;
     font-size: 32px;
     line-height: 0;
     right: 30px;
@@ -658,13 +658,13 @@ width: 15%;
 .scroll-top-2 img{
   height: 25px;
   width: 25px;
-  margin: 10px;
+  margin: 13px;
 }
 
 .scroll-top-2 span{
-  color: #000000;
-  margin-right: 10px;
-  font-weight: 700;
+  color: #FFE6E6;
+  margin-right: 13px;
+  font-weight: 600;
 }
 
 .scroll-top-2 i {
@@ -754,7 +754,7 @@ color: rgb( 66,41,59);
 section,
 .section {
   color: #686D76;
-  background-color: #EEEEEE;
+  background-color: #FFE6E6;
   padding: 60px 0;
   scroll-margin-top: 92px;
   overflow: clip;
@@ -1176,15 +1176,15 @@ max-width: 500px;
 
 .catalog button{
   padding: 10px 15px;
-  border: 4px solid rgb( 66,41,59);
-  background-color: #EEEEEE;
-  color: black;
+  border: 4px solid #AD88C6;
+  background-color: #FFE6E6;
+  color: #AD88C6;
   text-transform: uppercase;
 
 }
 .catalog button:hover{
-  background-color:rgb( 66,41,59) ;
-  color:#EEEEEE ;
+  background-color:#AD88C6 ;
+  color:#FFE6E6 ;
   transition: ease-in-out 0.4s;
 }
 
@@ -1457,9 +1457,9 @@ max-width: 500px;
 }
 
 .features .nav-link.active {
-  background-color: #EEEEEE;
+  background-color: #FFE6E6;
   color: var(--accent-color);
-  border-color: rgb( 66,41,59);
+  border-color: #6d567b;
 }
 
 .features .tab-content {
@@ -1640,7 +1640,7 @@ max-width: 500px;
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 10px;
+  border-radius: 50%;
   border: 6px solid var(--background-color);
   position: absolute;
   left: -45px;
