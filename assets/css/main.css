@@ -1235,9 +1235,9 @@ max-width: 500px;
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services {
+/* .services {
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
-}
+} */
 
 .services .service-item {
   padding: 40px;
@@ -1257,8 +1257,11 @@ max-width: 500px;
   border-bottom: 1px solid #AD88C6;
   height: 230px;
 }
+.service-details a{
+  color: #7469B6;
+}
 .service-details h3{
-  color: #E1AFD1;
+  color: #7469B6;
 }
 
 .services .service-item .icon {
@@ -2148,7 +2151,7 @@ max-width: 500px;
 
 .service-details p {
   font-size: 15px;
-  color: #FFE6E6;
+  color: #686D76;
 }
 
 .service-details ul {
