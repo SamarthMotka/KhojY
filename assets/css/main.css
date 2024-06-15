@@ -13,7 +13,7 @@
   --background-color: #7469B6;
 
   /* Default Color - This is the default color used for the majority of the text content. */
-  --default-color: #686D76;
+  --default-color: white;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
   --heading-color: #6d567b;
@@ -264,7 +264,9 @@ width: 15%;
   .navmenu .dropdown ul li {
     min-width: 200px;
   }
-
+  .navmenu .dropdown ul li:hover{
+    background-color: #c3b6cb;
+  }
   .navmenu .dropdown ul a {
     padding: 10px 20px;
     font-size: 15px;
@@ -1250,13 +1252,13 @@ max-width: 500px;
   /* margin-top: 20px; */
   padding: 10px 20px;
   /* padding-top: 20px; */
-  border-left: 1px solid #D4C5A8;
-  border-right: 1px solid #D4C5A8;
-  border-bottom: 1px solid #D4C5A8;
-  height: 200px;
+  border-left: 1px solid #AD88C6;
+  border-right: 1px solid #AD88C6;
+  border-bottom: 1px solid #AD88C6;
+  height: 230px;
 }
 .service-details h3{
-  color: #D4C5A8;
+  color: #E1AFD1;
 }
 
 .services .service-item .icon {
@@ -2146,6 +2148,7 @@ max-width: 500px;
 
 .service-details p {
   font-size: 15px;
+  color: #FFE6E6;
 }
 
 .service-details ul {
