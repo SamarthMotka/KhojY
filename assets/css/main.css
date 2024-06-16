@@ -2177,11 +2177,23 @@ max-width: 500px;
 --------------------------------------------------------------*/
 .project-details .portfolio-details-slider img {
   width: 100%;
+  /* height: 50%; */
 }
-
-.project-details .swiper-wrapper {
+.project-details .swiper{
+  width: 40%;
+}
+@media (max-width: 575px){
+  .project-details .swiper{
+    width: 80%;
+  }
+  .project-details, section{
+    padding: 20px;
+    /* margin: 20px; */
+  }
+}
+/* .project-details .swiper-wrapper {
   height: auto;
-}
+} */
 
 .project-details .swiper-button-prev,
 .project-details .swiper-button-next {
