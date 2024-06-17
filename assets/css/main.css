@@ -1943,7 +1943,7 @@ max-width: 500px;
 }
 
 .faq-div{
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -2307,7 +2307,7 @@ max-width: 500px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: #686D76
+  color: #686D76;
   background-color: #e7d9ec;
   /* background-color: color-mix(in srgb, var(--background-color), transparent 50%); */
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
