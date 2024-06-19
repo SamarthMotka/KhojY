@@ -818,7 +818,8 @@ section,
 .hero-desc-content{
   font-size: 20px;
 }
-.process p {
+/* .process li{} */
+.process li,p{
   font-size: 17px;
   text-wrap: pretty;
   margin: 12px 10px;
@@ -1545,7 +1546,7 @@ max-width: 500px;
 
 .projects .portfolio-filters li:hover,
 .projects .portfolio-filters li.filter-active {
-  color: var(--accent-color);
+  color: #6d567b;
 }
 
 .projects .portfolio-filters li:first-child {
