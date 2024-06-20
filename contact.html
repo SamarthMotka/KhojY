@@ -75,7 +75,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title" data-aos="fade" style="background-image: url('https://img.freepik.com/free-vector/contact-us-landing-page-illustration_52683-18236.jpg?t=st=1718302228~exp=1718305828~hmac=c2a1e23d92a38239020fcfffbcc95b20dd12e8e961275a44505d82c589a5f9cb&w=996');">
+    <div class="page-title" data-aos="fade" style="background-image: url('https://res.cloudinary.com/da5crwlqh/image/upload/v1718627166/WhatsApp_Image_2024-06-14_at_20.01.25_d11dac9f_oev1cd.jpg');">
       <div class="container position-relative">
         <h1>Contact Us</h1>
         <nav class="breadcrumbs">
@@ -127,6 +127,8 @@
 
           <div class="col-lg-6 contact-form">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+
+              <input type="hidden" name="access_key" value="53c26ac0-e652-4b2d-8aef-d89e8fbb6dab">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -134,8 +136,12 @@
                 </div>
 
                 <div class="col-md-6 ">
+                  <input type="tel" class="form-control" name="telephone" placeholder="Your phone number" required="">
+                </div>
+                <div class="col-md-12 ">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
+                
 
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
