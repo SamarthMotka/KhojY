@@ -1433,6 +1433,12 @@ max-width: 500px;
 --------------------------------------------------------------*/
 .features .nav-tabs {
   border: 0;
+  
+}
+@media (max-width:400px) {
+.col-3{
+  width: 100%;
+}  
 }
 
 .features .nav-link {
