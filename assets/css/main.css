@@ -1308,9 +1308,9 @@ max-width: 500px;
   border-bottom: 4px solid color-mix(in srgb, var(--heading-color), transparent 90%);
   transition: 0.3s;
 }
-.ship_policy{
+/* .ship_policy{
   height: 52vh;
-}
+} */
 /* .ship_list{
   width: 80%;
   margin: auto 0;
